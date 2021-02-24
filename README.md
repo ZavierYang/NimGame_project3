@@ -46,48 +46,48 @@ The system should check inputs for validity. For this task, you will not be requ
       XXX’s turn - remove how many?
       
 3.  The player statistics file  
-The task is to store these data upon exiting the program, and to restore them on subsequent executions. Thus, if one was to exit your program (using the **exit** command), and then start it again (by running **java Nimsys** at the shell prompt), your program should be restored to the state it was in immediately before exiting. That is, it should be as if the program never existed at all.
+- The task is to store these data upon exiting the program, and to restore them on subsequent executions. Thus, if one was to exit your program (using the **exit** command), and then start it again (by running **java Nimsys** at the shell prompt), your program should be restored to the state it was in immediately before exiting. That is, it should be as if the program never existed at all.
 
-All player information should be stored, i.e., usernames, given / family names, and number of games played / won. Note that you do not need to store information about games in progress, since a game should never be in progress when the program exits properly, i.e., via the **exit** command.
+- All player information should be stored, i.e., usernames, given / family names, and number of games played / won. Note that you do not need to store information about games in progress, since a game should never be in progress when the program exits properly, i.e., via the **exit** command.
 
 4. The AI player
-A new type of player is to be added - an AI player. This player type should be controlled by the program, not by a human player. Aside from this, an AI player should be the same as a human player. That is, they should have all the same information associated with them (i.e., username, given/family names, and number of games played/won), and they should be stored in the system and appear in player lists/rankings, just as human players are.
+- A new type of player is to be added - an AI player. This player type should be controlled by the program, not by a human player. Aside from this, an AI player should be the same as a human player. That is, they should have all the same information associated with them (i.e., username, given/family names, and number of games played/won), and they should be stored in the system and appear in player lists/rankings, just as human players are.
 
-The only difference between a human player and an AI player is in the way that they make a move. Instead of prompting for a move to be entered via standard input, the AI player should choose their own move, based on the state of the game. Thus, the only difference between a human player and an AI player should be in the method used to make a move. This suggests that polymorphism should be applied here. You can add an abstract **NimPlayer class**, which will be used to represent the behaviour/attributes common to both Human and AI players. You can modify your original **NimPlayer class** used in Project 2 to be the new **abstract NimPlayer class**, and the **human player class (NimHumanPlayer)** and **AI player class (NimAIPlayer)** can extend the abstract player class.
+- The only difference between a human player and an AI player is in the way that they make a move. Instead of prompting for a move to be entered via standard input, the AI player should choose their own move, based on the state of the game. Thus, the only difference between a human player and an AI player should be in the method used to make a move. This suggests that polymorphism should be applied here. You can add an abstract **NimPlayer class**, which will be used to represent the behaviour/attributes common to both Human and AI players. You can modify your original **NimPlayer class** used in Project 2 to be the new **abstract NimPlayer class**, and the **human player class (NimHumanPlayer)** and **AI player class (NimAIPlayer)** can extend the abstract player class.
 
-To allow for AI players to be added to the system, you should create a new command - **addaiplayer**. This command should operate in exactly the same way as **addplayer**. Note that all other commands, e.g., ‘removeplayer’ and ‘editplayer’ should work for both human players and AI players. Provided below is an example of the use of the ‘addaiplayer’ command:
+- To allow for AI players to be added to the system, you should create a new command - **addaiplayer**. This command should operate in exactly the same way as **addplayer**. Note that all other commands, e.g., ‘removeplayer’ and ‘editplayer’ should work for both human players and AI players. Provided below is an example of the use of the ‘addaiplayer’ command:
 
-    addaiplayer artoo,D2,R2
+      addaiplayer artoo,D2,R2
 
-Example of when AI player is in the game ($ means the input)
+- Example of when AI player is in the game ($ means the input)
 
-    $startgame 10,3,lskywalker,artoo
-    
-    Initial stone count: 10
-    Maximum stone removal: 3
-    Player 1: Luke Skywalker
-    Player 2: R2 D2
+      $startgame 10,3,lskywalker,artoo
 
-    10 stones left: * * * * * * * * * *
-    Luke’s turn - remove how many?
-    $3
-    
-    7 stones left: * * * * * * *
-    R2’s turn - remove how many?
-    
-    5 stones left: * * * * *
-    Luke’s turn - remove how many?
-    $3
-    
-    2 stones left: * *
-    R2’s turn - remove how many?
-    
-    1 stones left: *
-    Luke’s turn - remove how many?
-    $1
-    
-    Game Over
-    R2 D2 wins!
-    $
+      Initial stone count: 10
+      Maximum stone removal: 3
+      Player 1: Luke Skywalker
+      Player 2: R2 D2
+
+      10 stones left: * * * * * * * * * *
+      Luke’s turn - remove how many?
+      $3
+
+      7 stones left: * * * * * * *
+      R2’s turn - remove how many?
+
+      5 stones left: * * * * *
+      Luke’s turn - remove how many?
+      $3
+
+      2 stones left: * *
+      R2’s turn - remove how many?
+
+      1 stones left: *
+      Luke’s turn - remove how many?
+      $1
+
+      Game Over
+      R2 D2 wins!
+      $
 
     
