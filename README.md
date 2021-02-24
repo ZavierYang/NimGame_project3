@@ -7,6 +7,10 @@ The aim of this project is to add some more advanced features to the system deve
 
 The system should still operate as specified in Project 2, but with additional functionality, due to the addition of the aforementioned features. Thus, it is advised that you use your Project 2 solution as a starting point for implementing Project 3.
 
+[Go to Project 1](https://github.com/ZavierYang/NimGame_project1)
+
+[Go to Project 2](https://github.com/ZavierYang/NimGame_project2)
+
 ## Knowledge Coverage
 * Exceptions
 * File I/O operations
@@ -93,5 +97,5 @@ The system should check inputs for validity. For this task, you will not be requ
 ## Importance
 This is a project from a programming course (subject). If you come to watch because of your course (subject) assignment, do not just copy and paste this code or just modify the variables name otherwise your score is possible to be penalised. Moreover, this project is divided into three parts and is completed with the progress of the course (subject). Therefore, different JAVA concepts will not be implemented in the same part and the difficulty will be different.
 
-## Reference
+## Source
 University of Melbourne COMP90041 Subject
