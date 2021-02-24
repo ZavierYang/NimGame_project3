@@ -1,0 +1,49 @@
+Welcome to Nim
+
+$Are you sure you want to remove all players? (y/n)
+
+$
+$
+$
+Initial stone count: 30
+Maximum stone removal: 5
+Player 1: R2 D2
+Player 2: Luke Skywalker
+
+30 stones left: * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+R2's turn - remove how many?
+
+25 stones left: * * * * * * * * * * * * * * * * * * * * * * * * *
+Luke's turn - remove how many?
+
+24 stones left: * * * * * * * * * * * * * * * * * * * * * * * *
+R2's turn - remove how many?
+
+19 stones left: * * * * * * * * * * * * * * * * * * *
+Luke's turn - remove how many?
+
+17 stones left: * * * * * * * * * * * * * * * * *
+R2's turn - remove how many?
+
+13 stones left: * * * * * * * * * * * * *
+Luke's turn - remove how many?
+
+10 stones left: * * * * * * * * * *
+R2's turn - remove how many?
+
+7 stones left: * * * * * * *
+Luke's turn - remove how many?
+
+3 stones left: * * *
+R2's turn - remove how many?
+
+1 stones left: *
+Luke's turn - remove how many?
+
+Game Over
+R2 D2 wins!
+
+$100% | 01 games | R2 D2
+0%   | 01 games | Luke Skywalker
+
+$
