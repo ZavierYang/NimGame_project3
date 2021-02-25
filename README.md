@@ -64,39 +64,38 @@ The system should check inputs for validity. For this task, you will not be requ
 
 - To allow for AI players to be added to the system, you should create a new command - **addaiplayer**. This command should operate in exactly the same way as **addplayer**. Note that all other commands, e.g., ‘removeplayer’ and ‘editplayer’ should work for both human players and AI players. Provided below is an example of the use of the ‘addaiplayer’ command:
 
-      addaiplayer artoo,D2,R2
+      addaiplayer AI,A,I
 
 - Example of when AI player is in the game ($ means the input)
 
-      $startgame 10,3,lskywalker,artoo
+      $startgame 10,3,X,AI
 
       Initial stone count: 10
       Maximum stone removal: 3
-      Player 1: Luke Skywalker
-      Player 2: R2 D2
+      Player 1: XXX XXXX
+      Player 2: A I
 
       10 stones left: * * * * * * * * * *
-      Luke’s turn - remove how many?
+      XXX’s turn - remove how many?
       $3
 
       7 stones left: * * * * * * *
-      R2’s turn - remove how many?
+      A’s turn - remove how many?
 
       5 stones left: * * * * *
-      Luke’s turn - remove how many?
+      XXX’s turn - remove how many?
       $3
 
       2 stones left: * *
-      R2’s turn - remove how many?
+      A’s turn - remove how many?
 
       1 stones left: *
-      Luke’s turn - remove how many?
+      XXX’s turn - remove how many?
       $1
 
       Game Over
-      R2 D2 wins!
+      A I wins!
       $
-
 
 ## Source
 University of Melbourne COMP90041 Subject
