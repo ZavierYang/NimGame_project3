@@ -100,4 +100,4 @@ The system should check inputs for validity. For this task, you will not be requ
 ## Source
 University of Melbourne COMP90041 Subject
 
-Received marks of this project: 19 / 20
+Received marks of this project: 9.5 / 10 + 1 (bouns point)
